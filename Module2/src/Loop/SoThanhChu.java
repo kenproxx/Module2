@@ -1,6 +1,8 @@
+package Loop;
+
 import java.util.Scanner;
 
-public class test {
+public class SoThanhChu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
