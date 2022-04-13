@@ -12,5 +12,7 @@ public class FindMaxValue {
             }
         }
         System.out.println("max la: " + max);
+        System.out.println(FindMinValue.findMin(arr));
     }
 }
+

@@ -5,14 +5,32 @@ public class Fan {
     private boolean status = false;
     private double radius = 5;
     private String color = "blue";
+
     public static void main(String[] args) {
         Fan fan1 = new Fan(3,1,4,"red");
         Fan fan2 = new Fan(2,0,3,"green");
         System.out.println(fan1.toString());
         System.out.println(fan2.toString());
+        System.out.println(fan1.equals(fan2));
+
 
 
     }
+    public boolean equals(Fan hii) {
+        if (color.equals(hii.color)) {
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+    static void hihi() {
+
+    }
+
+
+
 
     public Fan(int speed, int so, double radius, String color) {
         this.speed = speed;
@@ -31,7 +49,7 @@ public class Fan {
         return speed;
     }
 
-    public boolean checkStatus() {
+    public  boolean checkStatus() {
         return status;
     }
 

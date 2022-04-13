@@ -9,3 +9,12 @@ public class test {
     }
 
 }
+class hiHa extends Fan {
+
+    public hiHa(int speed, int so, double radius, String color) {
+        super(speed, so, radius, color);
+    }
+
+
+}
+

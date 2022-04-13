@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#header {
+    text-align: center;
+}
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+    margin: auto;
+}
+.clear::after {
+    clear: both;
+}
+
+/*.row {*/
+/*    float: left;*/
+/*}*/
+
+/*.col-half {*/
+/*    width: 50%;*/
+/*}*/
+
+/*.col-third {*/
+/*    width: 33%;*/
+/*    display: block;*/
+/*}*/
+
+#header .heading {
+    font-size: 130px;
+    letter-spacing: 20px;
+    font-weight: 100;
+    padding: 50px 0;
+    line-height: 100px;
+    text-transform: uppercase;
+
+
+}
+
+#header .heading-detail li{
+    /*float: left;*/
+    display: inline;
+    text-align: center;
+
+
+}
+#header a{
+    text-decoration: none;
+}
+
+#header .heading-icon {
+    margin: 50px 0;
+}
+.heading-order {
+
+}
+
+.heading-order .img{
+    width: 100%
+}
+
+
+#header .heading-content {
+    margin: 40px 0;
+}
+
+.heading-content p {
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+}
+
+.heading-content button {
+    padding: 16px 25px;
+    background-color: #021132;
+    border: 2px solid black;
+    color: #f1f1f1;
+    letter-spacing: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Times New Roman";
+
+}
+
+.heading-content button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#header, #content {
+    width: 850px;
+    margin: auto;
+
+}
+
+#content .content-list  {
+    display: block;
+    text-align: center;
+
+}
+#content .content-list img {
+    width: 33%;
+    float: left;
+    display: block;
+    padding: 0 15px;
+    /*position: relative;*/
+    text-align: center;
+}
+
+#content .content-list p {
+    display: block;
+    z-index: 1;
+    position: absolute;
+/*width: ;*/
+/*    text-align: center;*/
+}
+
+#content {
+    display: inline-block;
+    padding-bottom: 98px;
+}
+
+#footer {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer-detail {
+    float: left;
+    display: inline-block;
+    position: relative;
+    padding: 48px 0;
+    background-color: #021132;
+    width: 100vw;
+    color: white;
+
+}
+.footer-detail li {
+    list-style-type: none;
+}
+

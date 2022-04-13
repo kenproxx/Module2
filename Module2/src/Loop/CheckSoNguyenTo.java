@@ -1,5 +1,7 @@
 package Loop;
 
+import Array.FindMinValue;
+
 import java.util.Scanner;
 
 public class CheckSoNguyenTo {

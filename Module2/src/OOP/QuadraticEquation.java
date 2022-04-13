@@ -25,13 +25,11 @@ public class QuadraticEquation {
 
     }
      static double getRoot1(double delta, double a, double b) {
-        double result = (double) ((-b - Math.sqrt(delta)) / (2 * a));
-        return result;
+         return (double) ((-b - Math.sqrt(delta)) / (2 * a));
     }
 
      static double getRoot2(double delta, double a, double b) {
-        double result = (double) ((-b + Math.sqrt(delta)) / (2 * a));
-        return result;
+         return   (double) ((-b + Math.sqrt(delta)) / (2 * a));
     }
 
 }

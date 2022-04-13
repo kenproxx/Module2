@@ -1,15 +1,18 @@
 package OOP;
 
-import java.util.Scanner;
 
  class QuadraticEquationNoneStatic {
-    double a, b, c;
+    private double a, b, c;
 
     public QuadraticEquationNoneStatic(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
     }
+
+     public QuadraticEquationNoneStatic() {
+
+     }
 
     double getDiscriminant() {
         return (b * b) - (4 * a * c);
@@ -32,8 +35,13 @@ import java.util.Scanner;
 
     }
 
+
+}
+class result{
     public static void main(String[] args) {
         QuadraticEquationNoneStatic quadra = new QuadraticEquationNoneStatic(3, 5, 1);
         System.out.println(quadra.getRoot1()+ " " + quadra.getRoot2());
     }
 }
+
+
