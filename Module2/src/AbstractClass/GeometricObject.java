@@ -1,5 +1,7 @@
 package AbstractClass;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Date;
 
 public abstract class GeometricObject {
@@ -55,6 +57,10 @@ class Circle extends GeometricObject {
         this.radius = radius;
     }
 
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
     public double getRadius() {
         return this.radius;
     }
@@ -72,6 +78,22 @@ class Circle extends GeometricObject {
         return 0;
     }
 }
+
+class CircleCompable implements Comparable<Circle> {
+    public CircleCompable() {
+    }
+
+    public int compareTo(Circle c1, Circle c2) {
+        if(c1.getRadius() > c2.getRadius()) return 1;
+        else if(c1.getRadius() < c2.getRadius()) return -1;
+        else return 0;
+    }
+
+    public int compareTo(Circle o) {
+        return 0;
+    }
+}
+
 
 class Rectangle extends GeometricObject {
     protected double width, height;
@@ -116,5 +138,28 @@ class Rectangle extends GeometricObject {
     }
 
 }
+
+class CircleCompableTest {
+    public static void main(String[] args) {
+        Circle[] circles = new Circle[3];
+        circles[0] = new Circle();
+        circles[1] = new Circle(2,"red", true);
+        circles[2] = new Circle(8);
+
+        System.out.println("pre-sorted");
+        for (Circle circle :
+                circles) {
+            System.out.println(circle);
+        }
+        System.out.println("after-sorted");
+        for (Circle a :
+                circles) {
+            System.out.println(a);
+        }
+    }
+
+}
+
+
 
 
