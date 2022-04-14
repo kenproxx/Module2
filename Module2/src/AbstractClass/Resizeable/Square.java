@@ -1,6 +1,6 @@
 package AbstractClass.Resizeable;
 
-public class Square extends Shape{
+public class Square extends Shape implements Resize{
     public Square() {
 
     }
@@ -16,4 +16,5 @@ public class Square extends Shape{
     public double getPerimeter() {
         return super.getHeight() * 4;
     }
+
 }
